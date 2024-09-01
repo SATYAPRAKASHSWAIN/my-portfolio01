@@ -81,7 +81,7 @@ function remove3() {
 }
 
 function linkRedirect() {
-  window.location = "./AllLinks.html";
+  window.location = "./allLinks.html";
 }
 function aboutRedirect() {
   window.location = "./About.html";
