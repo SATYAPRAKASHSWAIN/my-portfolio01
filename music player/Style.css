@@ -1,0 +1,391 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.main-logo {
+  width: 50%;
+  margin: 100px;
+}
+.slogan {
+  color: red;
+  font-family: cursive;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  bottom: 30px;
+}
+.slogan2 {
+  color: skyblue;
+  font-size: 40px;
+  text-align: left;
+  margin-top: -100px;
+}
+.pic-parent {
+  position: relative;
+}
+.picture1 {
+  position: fixed;
+  right: 150px;
+  top: 220px;
+  width: 400px;
+  border-radius: 40px;
+  animation-name: animation1;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.picture2 {
+  position: fixed;
+  right: 100px;
+  top: 350px;
+  width: 300px;
+  border-radius: 40px;
+  animation-name: animation2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.picture3 {
+  position: fixed;
+  right: 150px;
+  top: 50px;
+  width: 250px;
+  border-radius: 40px;
+  animation-name: animation3;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.cbtn a {
+  width: 180px;
+  margin: 30px;
+}
+@keyframes animation1 {
+  0% {
+    right: -300px;
+    /* transform: scale(0); */
+  }
+  100% {
+    right: 150px;
+    /* transform: scale(1.4); */
+  }
+}
+@keyframes animation2 {
+  0% {
+    right: -300px;
+    /* transform: scale(0); */
+  }
+  20% {
+    right: -300px;
+  }
+  100% {
+    right: 100px;
+    /* transform: scale(1.4); */
+  }
+}
+@keyframes animation3 {
+  0% {
+    right: -300px;
+    /* transform: scale(0); */
+  }
+  50% {
+    right: -300px;
+  }
+  100% {
+    right: 150px;
+    /* transform: scale(1.4); */
+  }
+}
+
+/* ------------------------------------------------MUSIC---------------------------------------------- */
+
+.nav-logo img {
+  width: 100%;
+}
+.left-side {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.468);
+}
+.left-side a {
+  text-decoration: none;
+}
+.left-side a div {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px 0px 10px 30px;
+}
+.left-side a div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 128, 0, 0.26),
+    rgba(0, 0, 0, 0)
+  );
+  color: green;
+}
+.left-side p {
+  font-size: 13px;
+  color: rgb(136, 25, 60);
+  margin: 0px 0px 0px 30px;
+}
+.left-side button {
+  background-color: rgba(0, 128, 0, 0.45);
+  color: white;
+  border: none;
+  width: 150px;
+  border-radius: 20px;
+  margin: 20px 50px 45px;
+}
+.left-side span {
+  margin: 0px 20px 0px 0px;
+}
+.home-pic {
+  text-align: center;
+  position: relative;
+}
+.home-pic-middle {
+  display: flex;
+  justify-content: center;
+}
+.home-pic1 {
+  width: 55%;
+  border-radius: 50px;
+}
+.carousel-inner {
+  border-radius: 50px;
+}
+.color1 {
+  height: 80%;
+  width: 70%;
+  background-color: yellow;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  border-radius: 40px;
+  z-index: -1;
+}
+.color2 {
+  height: 70%;
+  width: 90%;
+  background-color: royalblue;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  border-radius: 40px;
+  z-index: -2;
+}
+
+.orb {
+  width: 120px;
+  height: 120px;
+  background: #999;
+  border-radius: 60px;
+  display: inline-block;
+  margin: 0px 24.7px 60px;
+  transition: all 0.2s ease-out;
+  position: relative;
+}
+.orb img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+}
+.orb p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 110%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.orb:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+  cursor: pointer;
+}
+.marquee {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  margin: 10px auto;
+}
+.marquee--inner {
+  display: block;
+  width: 200%;
+  margin: 70px 0;
+  position: absolute;
+  animation: marquee 40s linear infinite;
+}
+.marquee--inner:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* ------------------------------------------------MUSIC PLAYER---------------------------------------------- */
+
+.backgrounds {
+  display: none;
+}
+.right-side .text-center img {
+  width: 350px;
+  height: 350px;
+  margin: 0px 0px 30px;
+}
+.song-titles,
+.song-artists {
+  display: none;
+}
+.right-side .text-center h1 {
+  color: rgb(255, 220, 133);
+  font-size: 50px;
+}
+.right-side .text-center h3 {
+  color: rgb(108, 108, 108);
+  margin-bottom: 30px;
+}
+.right-side .text-center audio {
+  width: 98%;
+  margin-top: 20px;
+  accent-color: red;
+}
+/* .right-side .text-center button span
+  {
+    font-size: 40px;
+    color: white;
+  } */
+.right-side .text-center button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.controlbar-container {
+  width: 100%;
+  height: 7px;
+  background-color: rgba(128, 128, 128, 0.208);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.controlbar {
+  background-color: white;
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.music-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timing {
+  color: white;
+  width: 100px;
+}
+.main-controls {
+  background-color: rgba(128, 128, 128, 0.208);
+  border-radius: 35px;
+  padding: 7px 10px 0px;
+}
+.right-side .text-center .main-controls button span {
+  font-size: 40px;
+  color: white;
+}
+.other-controls {
+  background-color: rgba(128, 128, 128, 0.208);
+  border-radius: 35px;
+  padding: 7px 10px 0px;
+  margin-left: 20px;
+}
+.right-side .text-center .other-controls button span {
+  font-size: 30px;
+  color: white;
+}
+.volume-controls {
+  background-color: rgba(128, 128, 128, 0.208);
+  border-radius: 35px;
+  padding: 7px 10px 0px;
+  margin-right: 20px;
+  display: flex;
+}
+.right-side .text-center .volume-controls button span {
+  font-size: 30px;
+  color: white;
+}
+.music-controlbar-container {
+  width: 100px;
+  height: 7px;
+  background-color: rgba(128, 128, 128, 0.208);
+  border-radius: 5px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.music-controlbar {
+  background-color: white;
+  width: 60%;
+  height: 100%;
+  border-radius: 5px;
+  transition: all 0.1s;
+}
+.right-field {
+  display: flex;
+  justify-content: space-between;
+}
+.right-field .text-center {
+  width: 100%;
+}
+
+.playlist {
+  background-color: rgba(128, 128, 128, 0.208);
+  width: 20px;
+  padding: 20px 0px 0px 20px;
+  border-radius: 20px 0px 0px 20px;
+  margin-top: -80px;
+  transition: all 1s;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.playlist:hover {
+  width: 890px;
+}
+.playlist-row {
+  display: flex;
+  justify-content: space-between;
+}
+.playlist-row button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 120px;
+  height: 145px;
+  margin: 14px 30px 14px 20px;
+  /* margin-left: 40px; */
+  font-size: 15px;
+  padding: 0px;
+  color: yellow;
+  transition: all 0.2s;
+}
+.playlist-row button:hover {
+  transform: scale(1.02);
+  /* box-shadow: 1px 1px 10px black; */
+  filter: drop-shadow(0px 0px 100px white);
+}
+.playlist-row button img {
+  width: 120px;
+  margin-bottom: 5px;
+}

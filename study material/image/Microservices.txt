@@ -1,0 +1,133 @@
+
+Microservice
+=============
+
+=>Microservice is nothing but we break bigger application into small mini project and we establish the communication between
+  two application  by the help of restTemplete.
+
+=> Microservice is not  a framework, not a API.It is a design pattern to develop our applications.
+
+=>Using Microservice we can develop application with loosely coupling, in stead of developing all the functionlity in single application.
+
+Advantages
+===========
+
+=>Rapid development
+=> Quick Releases
+=> Easily deployment, manageble and maintainble.
+=>Fast development
+=> We can use multiple programming language(Independent technologies).
+
+Dis-advantages
+==============
+
+=> Bounded context ( Deciding how many microservices we are develop in a project)
+=> Duplicate Configuration (In every microservices we need to write some common configuration )
+=> Visibility (All team members will not get the change to check with all microservices)
+=>Peak of cards (If main/Microservices failed then rest of the services will become useless)
+
+
+MICROSERVICES ARCHITECTURE :
+===============================
+
+=> There is no  fixed architecture for microservices
+=>Companies/ People are customising microservices architechture as per their project requirement.
+
+                                                                                                                       Admin Server               
+     ================               ================                ==================         -----> Rest Template
+     =  Api Gateway    =      --->    = Service Registry =   --->         =  API1<-----> API2     =          -----> Web Client                                      
+     ================               ================                ==================         -----> Third Party API 
+                                                                                                                         Zipkin Server
+(1) SERVICE RIGISTRY :
+ ==================
+
+=> It is used to register all the services/rest apis availables in the projects.
+=> It will provide all  services  details like name , status, url etc.
+=> It provides user interface to monitor all the datails
+
+(2) Admin Server :
+================
+
+=>It is used to monitor and manage all the service at one place.
+=> It provided user interface to monitor and manages apis.
+=> Actuator end points, Log level changes without restarting server etc.
+
+
+(3) Apli Gateway :
+===============
+
+=> It will act as front gate for backend apis.
+=> It acts as mediator between end user request and backend apis.
+=> We will write filter and routers here.
+=> Using filter we can validate the request (Security).
+=> Routers are user to forword the request backend api.
+
+(4) Feign Client :
+==============
+
+=>Feign Client is used to implement interservice communication between two microservice with in same project is 
+    called as interservice communication.
+
+(5) Ziplin Server :
+===============
+
+=> It is used for distrubuted log tracing .
+=> We can find which rest/api/services taking more time to process a request.
+=> It provids user interface to monitor service/rest apis execution datails.
+
+(6) Api/ Services :
+=================
+
+=> Api contains actual business login of our application.
+=> Apis means our RESTFULL Services (REST APIS).
+=> Every API is called as one Microservies.
+=>Every API is responsible to perform one/action/operation.
+
+Ex :payment api, report api, admin api, dashboard api.
+
+
+(7) Circuit Breaker :
+==================
+
+=> Circuit Breaker is a design pattern used in microservices architecture where different
+ services interacting with each other over a network, and circuit breaker protects them from
+ cascading failures to enhance the resiliency and fault tolerance of a distributed system.
+
+(8) Load Balance  :
+================
+
+--> The process of deploying our application in multiple servers to distrubute the load is called
+      as Load Balancing.
+
+(9) 12 principle of microservices.
+
+(10) solid principle in java.    
+
+(11) step under high load spring boot application
+-> First, I would identity the specific performance issues using monitoring tools like SPRING BOOT  ACTUATOR.
+-> I would also analyze application logs and metrics to spot any patterns pr errors , especially under high load.
+->Then ,i would start a performance tests to replicate the issue and use a profiler for code-level analysis.
+
+After getting findings, I might optimize the database , implement caching , or use scaling options.It's
+also crucial to continuously monitor the application to prevent future issues.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

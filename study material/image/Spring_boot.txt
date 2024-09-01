@@ -1,0 +1,144 @@
+Spring Boot
+=================
+(1)What is Spring boot
+=================
+Ans:   Spring Boot is an open-source, lightweight framework widely used for creating
+ REST APIs and stand-alone applications with minimal configuration.
+
+(2) What is the difference between Spring vs Spring boot?
+ Ans : Spring                                                                                               Spring boot 
+  ===========                                                                                        ==================
+->The most important feature of spring                                      ->The most important feature of spring boot is 
+framework is  dependancy injection.                                                auto configuration.
+-> To run spring application we need to set                                 ->No need to set server explicitly. because spring boot has
+server explicitly.                                                                                 default server like tomcat and jetty.
+-> Spring an open source light weight framework                       -> Spring boot is not a open source widdly used for develop Rest Api.
+widdly use for developing enterprise application.
+-> To create a spring application , the developers write               -> It is reduce lines of code.
+lots of code.
+
+(3) What is the feature of Spring boot?
+Ans:-> (i)  Auto configuration
+           (ii)  Starter dependancy
+           (iii) Temporary data base like h2 Data base
+           (iv) Version management
+           (v)  Security
+           (vi) Default Server like tomcat and jetty
+
+(4) What is the spring bean life cycle?
+Ans:>The complete life cycle of bean is maintained by spring IOC cointainer.
+->when we use @Autowired spring cointainer intiated a bean and then it perform dependency injection.
+->Then init() method of bean run first and then utility method and finally destory() method.
+->when the destroy method run bean life cycle comes to end.
+
+(5) What is bean scope and it types.
+Ans: 5 types of Bean Scope
+(1)Singleton
+=============
+->only one instance of the spring bean will be created for the spring container,
+   This is the default spring bean scope.
+(2)Prototype
+==============
+->A new instance will be created everytime the bean is required from the spring container.
+ (3)Request
+============
+->This is same as prototype scope,It is used for web applications.
+->A new instance of bean will be created for each http request.
+(4)Session
+===========
+A new will be created for each http session by the container.
+(5)Global Session
+=================
+->This is used to create global session beans for portlet application.
+
+(6) What is Spring security?
+Ans:-Authentication:-
+===================
+->Authentication is the procces for knowing and Identifying the user want to access.
+->it helps us to veryfying username and password wheather you authenticate user or not
+
+ Authorization:-
+============
+->Authorization is the proccess to allow authority to perform actions in the applications.
+->Authorizations telles which feature can be access,which feature can not be access.
+
+
+(7)What is Spring profile?
+Ans : Spring profiles provide a way to segregate parts of an application’s configuration, 
+allowing for different configurations to be used in different environments (e.g., development, testing, production). 
+This ensures that the appropriate settings are applied based on the active profile.
+
+(8)Annotation of Spring boot
+======================
+
+(9)What is Dependancy injection and it's type ?
+Ans:It create required bean (Object)  and inject   into its reference variable automatically. it has 3 types.
+
+                      (i) field injection
+                      (ii) setter injection
+                      (iii) Constructor injection
+
+(10) What is Spring Acuator?
+Ans:
+
+(11) What is Spring Aop?
+Ans:>The main purpose of AOP is to increase modularity by allowing
+  the separation of cross cutting concerns.
+->process of applying services as logging to our application classes
+  without modifying the code. 
+important Terminology:-
+-----------------------
+Aspect,Join point,Advice,Point cut etc
+
+(12)What is Spring Inversion of controller(spring ioc).
+Ans:->It is a place logical implementation is done.
+->Spring IOC container is a core of spring framework.
+->The container helps us to perform dependency injection and it is also maintain the life cycle of spring bean.
+
+(13) What is RestFull web Service?
+Ans:->Rest stands for representational state transfer.
+-> Rest Apis operate on a simple request/response system.
+(i) Click Server Architechture
+(ii) Uniform Interface
+(iii) Cachebility
+(iv) Layering
+(v) Statelessness.
+
+(14) What is   Soap  vs Rest
+Ans:     Soap                                                             Rest
+=============                                              ==================
+->Simple Object Access Protocol                 ->  Representational state transper.
+->Transper data between two application  -> json,Xml.
+using xml file.
+-> less performance                                      -> High performance.
+
+
+(15) What is Application Server vs Web Server?
+Ans:   Application Server                                               Web Server
+==========================                                 =============
+-> If you want to build dinamic application,          -> If you want to build static application using HTML, CSS
+using  technology like servlet, jsp, hibernate,          then we should go for web server.
+spring boot then we use application server.
+
+Ex:- Tomcat,JBoss, GlassFish etc.                              Ex:-  Nginx, IIS server, Google web.
+
+
+(16) What is Bean Factory and Application context(ioc).
+Ans:
+
+Bean Factory                                                       Application context                                         
+===============                                         =======================
+>Bean Factory is the root interface       ->The application context is a sub interface of 
+  for accesing the spring container.        beanfactory.it provides all the functionalities
+  it provides basic functionalities            of bean factory.
+  for managing beans.
+
+(17)
+
+
+=======================================================
+How to run Spring frameword in cmd
+Ey->How to read application.properties files in spring boot
+Ey->How to add another server in spring boot
+How to connect with multiple Database
+

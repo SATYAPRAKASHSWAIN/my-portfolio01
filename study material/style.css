@@ -1,0 +1,75 @@
+button {
+  width: 140px;
+  height: 50px;
+  margin: 20px 20px 10px 0px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: url(./image/pointer.png), auto !important;
+  transition: all 0.4s;
+  background-color: rgb(240, 239, 245);
+}
+body {
+  background-color: rgb(27, 26, 19) !important;
+  background-image: url(./image/bg6.WEBP);
+  /* background-image: url(); */
+  background-size: 100%;
+  position: relative;
+  cursor: url(./image/arrow.png), auto;
+}
+
+.self-pic {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 120vh;
+  z-index: 0;
+}
+
+/* .heading {
+  font-size: 200%;
+  font-weight: bolder;
+  color: white;
+  font-family: inherit, Geneva, Tahoma, sans-serif;
+  z-index: 4;
+} */
+.blink {
+  animation: blinker 0.5s linear infinite;
+  color: pink;
+  font-size: 200%;
+  font-weight: bolder;
+  /* Larger, responsive font size */
+  font-family: inherit, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  z-index: 4;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.hidenn {
+  /* text-align: center; */
+  text-transform: uppercase;
+  color: #edde0c;
+
+  position: relative;
+  top: 0px;
+  left: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  /* width: 450px;
+  height: 45px;
+  padding-top: 10px;
+  margin: 20px 20px 10px 0px;
+  font-weight: bold;
+  background-color: rgb(96, 10, 244);
+  border: none;
+  border-radius: 50px;
+  cursor: url(./image/pointer.png), auto !important;
+  transition: all 0.4s; */
+  /* background-color: rgb(240, 239, 245); */
+}

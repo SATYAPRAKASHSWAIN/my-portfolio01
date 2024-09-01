@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(52, 52, 52) !important;
+  overflow-x: hidden;
+  cursor: url("./images/arrow.png"), auto;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+a {
+  cursor: url("./images/pointer.png"), auto !important;
+  text-decoration: none !important;
+}
+h1 {
+  text-align: center;
+  font-size: 80px !important;
+  font-weight: bolder !important;
+  color: lightgreen !important;
+}
+.box1 {
+  width: 98%;
+  height: 150px;
+  background-color: yellow;
+  margin: 20px 20px 34px;
+  animation: box1 2s 1;
+  background-image: url(./images/birthday.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.box2 {
+  width: 98%;
+  height: 150px;
+  margin: 20px 20px 20px;
+  animation: box2 3s 1;
+}
+.box3 {
+  width: 98%;
+  height: 335px;
+  margin: 20px;
+  animation: box3 3s 1;
+}
+.box4 {
+  width: 99%;
+  height: 150px;
+  margin: 13px 20px 20px;
+  animation: box4 3s 1;
+  background-image: url(./images/bdown.jpg);
+  background-size: cover;
+  color: white;
+  background-position: center;
+  padding-top: 50px;
+  transition: all 1s;
+}
+.box5 {
+  width: 99%;
+  height: 150px;
+  margin: 13px 20px 13px;
+  background-image: url(./images/bdown.jpg);
+  background-size: cover;
+  color: white;
+  background-position: center;
+  padding-top: 50px;
+  display: none;
+}
+.box6 {
+  width: 98%;
+  height: 300px;
+  margin: 20px;
+  display: none;
+}
+.box6 img {
+  width: 100%;
+  height: 100%;
+}
+.box4:hover {
+  padding-top: 30px;
+}
+.box4 img {
+  width: 60px;
+}
+.box7 {
+  width: 98%;
+  height: 150px;
+  margin: 13px 20px 34px;
+  background-image: url(./images/Sarmu\ birthday.jpg);
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+.box8 {
+  width: 98%;
+  height: 150px;
+  margin: 13px 20px 34px;
+  background-image: url(./images/Ind\ day\ jspiders.jpg);
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+.box9 {
+  width: 98%;
+  height: 335px;
+  margin: 13px 20px 20px;
+  background-image: url(./images/bput.gif);
+  background-size: cover;
+  background-position: center;
+  padding-top: 270px;
+  display: none;
+}
+.box9 h3 {
+  color: white;
+  text-shadow: 0px 0px 22px black;
+  font-size: 40px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+@keyframes box1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+@keyframes box2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}
+@keyframes box3 {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+@keyframes box4 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+.security-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0%;
+  display: none !important;
+  animation: securitybox 1s 1;
+}
+@keyframes securitybox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+  }
+}
+.security-container .box {
+  height: 300px;
+  margin: 30vh 0px 0px 30px;
+  background-color: lavender;
+  align-items: center;
+  position: relative;
+  color: brown;
+  box-shadow: 2px 2px 40px red;
+  z-index: 1;
+}
+.box input {
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  border: none;
+  padding: 0px 0px 5px;
+  font-weight: bolder;
+  color: green;
+  outline: none;
+  font-size: 30px;
+}
+.box button {
+  width: 130px;
+  height: 50px;
+  margin: 15px 0px;
+  font-size: 23px;
+  color: royalblue;
+  border: none;
+  border: royalblue 2px solid;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: url("./images/pointer.png"), auto !important;
+  transition: all 0.3s;
+}
+.box button:hover {
+  background-color: royalblue;
+  color: white;
+}
+.box a {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  transition: all 0.5s;
+}
+.box a:hover {
+  transform: rotate(90deg);
+}
+.invalid {
+  color: red;
+  margin-top: -60px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 40px black;
+  z-index: -1;
+  display: none;
+  animation: invalid 3s 1;
+}
+@keyframes invalid {
+  20%,
+  80% {
+    margin-top: 30px;
+  }
+}

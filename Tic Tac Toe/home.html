@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <button class="btn">&nbsp;</button>
+        <button class="btn">&nbsp;</button>
+        <button class="btn">&nbsp;</button>
+      </div>
+      <div class="row">
+        <button class="btn">&nbsp;</button>
+        <button class="btn">&nbsp;</button>
+        <button class="btn">&nbsp;</button>
+      </div>
+      <div class="row">
+        <button class="btn">&nbsp;</button>
+        <button class="btn">&nbsp;</button>
+        <button class="btn">&nbsp;</button>
+      </div>
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+      <div class="line4"></div>
+
+      <div class="win1"></div>
+      <div class="win2"></div>
+      <div class="win3"></div>
+
+      <button class="refresh" onclick="Refresh()" title="Reset">
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+      <button class="theme" onclick="Theme()" title="Change Theme">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+
+      <button class="winner" onclick="Refresh()">
+        <i class="fa-solid fa-xmark"></i>
+        <h1>WINNER</h1>
+      </button>
+    </div>
+    <script src="./Function.js"></script>
+  </body>
+</html>

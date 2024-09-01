@@ -1,0 +1,191 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  margin-top: 20vh;
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  width: 20vh;
+  height: 20vh;
+  background-color: black;
+  border: none;
+  margin: 0.1vh;
+  color: white;
+  font-size: 12vh;
+}
+/* .btn:hover
+{
+    background-image: radial-gradient(rgb(30, 30, 30),black);
+} */
+.line1 {
+  width: 1vh;
+  height: 61vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1vh;
+  position: absolute;
+  top: 0px;
+  left: 20vh;
+}
+.line2 {
+  width: 1vh;
+  height: 61vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1vh;
+  position: absolute;
+  top: 0px;
+  right: 20vh;
+}
+.line3 {
+  width: 62vh;
+  height: 1vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1vh;
+  position: absolute;
+  top: 20vh;
+  left: 0vh;
+}
+.line4 {
+  width: 62vh;
+  height: 1vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1vh;
+  position: absolute;
+  bottom: 20vh;
+  left: 0vh;
+}
+.win1 {
+  width: 1.5vh;
+  height: 61vh;
+  background-color: white;
+  border-radius: 1vh;
+  position: absolute;
+  top: 0px;
+  left: 9.5vh;
+  display: none;
+  animation-name: win1;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.win2 {
+  width: 62vh;
+  height: 1.5vh;
+  background-color: white;
+  border-radius: 1vh;
+  position: absolute;
+  top: 9.5vh;
+  left: 0vh;
+  display: none;
+  animation-name: win2;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.win3 {
+  width: 82vh;
+  height: 1.5vh;
+  background-color: white;
+  border-radius: 1vh;
+  position: absolute;
+  top: 29.5vh;
+  left: -10vh;
+  transform: rotate(44deg);
+  display: none;
+  animation-name: win3;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.theme {
+  background-color: black;
+  color: rgb(165, 165, 165);
+  border: black;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 3.5vh;
+}
+.refresh {
+  background-color: black;
+  color: rgb(165, 165, 165);
+  border: black;
+  position: fixed;
+  top: 10px;
+  right: 70px;
+  font-size: 3.5vh;
+}
+.theme:hover,
+.refresh:hover {
+  color: white;
+}
+.adu:hover {
+  color: black;
+}
+.winner {
+  position: absolute;
+  top: 0vh;
+  width: 100%;
+  border: none;
+  height: 100%;
+  font-size: 7vh;
+  line-height: 0px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  animation-name: winner;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.winner i {
+  font-size: 200px;
+}
+@keyframes winner {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+  }
+}
+@keyframes win1 {
+  0% {
+    height: 0vh;
+  }
+  20% {
+    height: 0vh;
+  }
+  100% {
+  }
+}
+@keyframes win2 {
+  0% {
+    width: 0vh;
+  }
+  20% {
+    width: 0vh;
+  }
+  100% {
+  }
+}
+@keyframes win3 {
+  0% {
+    width: 0vh;
+    top: 30vh;
+    left: 30vh;
+  }
+  20% {
+    width: 0vh;
+    top: 30vh;
+    left: 30vh;
+  }
+  100% {
+  }
+}

@@ -1,0 +1,97 @@
+HIBERNATE
+==========
+ (1) What is Hibernate ?
+
+Ans : Hibernate is an open source object relation mapping(ORM)  tool that provided a framework
+   to map object oriented domain model to relational database for web service.
+
+(2) What is ORM ?
+
+Ans : It stands for object relational mapping tool.
+it is technique for converting data between relation database and object oriented 
+programming language.
+
+(3) What are the Advantages and Dis_advantages of hibernate.
+
+Ans : Advantages
+=================
+(i) Caching Mechanism:
+======================
+           Advantage: Hibernate includes built-in caching mechanisms (first-level and second-level caches)
+                                 that improve performance by reducing the number of database hits and minimizing latency.
+
+(ii) Lazy Loading :
+================
+           Advantage: Hibernate supports lazy loading, which means that associated entities are loaded only 
+                             when they are actually needed. This can significantly reduce memory usage and improve performance.
+
+(iii) Transaction Management:
+===========================
+           Advantage: Hibernate integrates well with Java Transaction API (JTA) and the Spring Framework, 
+                                   providing robust transaction management and ensuring data integrity.
+(iv) Automatic ORM Mapping
+=========================
+          Advantage: Hibernate automatically maps Java classes to database tables and Java object 
+                                properties to table columns. This reduces the need for manual mapping and simplifies the 
+                                 development process.
+
+
+Dis_Advantages
+================
+ (i) Configuration and Mapping:
+===========================
+          Disadvantage: Hibernate requires configuration (either XML or annotations), which can be
+                        verbose and prone to errors. Misconfigurations can lead to subtle and hard-to-debug issues.
+
+(ii) Memory Consumption:
+========================
+           Disadvantage: Hibernate’s caching mechanisms and the way it manages objects in memory can 
+                                     lead to higher memory consumption, which might be a concern in memory-constrained
+                                      environments.
+
+(4) What is HQL in hibernate?
+
+Ans :  Hibernate Query Languge (HQL) is an object-oriented query language similar to  SQL, But
+instead of operation on tables and columns, HQL works with persistent object
+and their properties. HQL queries are translated by Hibernate into conventional SQL
+quiries,which in turns perform action on database.
+
+(5) What is Lagy loading Vs Eager Loading ?
+Ans: Lagy loading                                                    Eager Loading
+==================                                          ==================
+-> In Lagy loading ,associate  data                   ->It is a design pattern which data load 
+load when we explicitly call getter() or            on the spot.
+size.
+
+Ex:-Question is load when answer is load   Ex:- All Questions with answer loaded automatically
+only when we call getter or size.
+
+(6) What is Get vs Load?
+Ans:    Get()                                                                                              load()
+===========                                                                               =============
+->It Used to fetch data from given Identifier.                  ->It Used to fetch data from given Identifier.
+-> If the object not found it will throw null value          -> If the object is not fount it will throw obj. not found exception.
+->get()  always hits database.                                               -> load() always not hit database.
+->It is slower than load() because it will give                  -> Load is better performance compare to get().
+full initialize obj.       
+
+
+doget() vs doPost()
+
+Hibernate Life Cycle =>Transient, Persistent,Detached, Remove
+
+interface  -> Session, SessionFactory ,Transaction
+
+Mapping -> OneToOne ,OneToMany, ManyToONe 
+
+Method available in Hibernate
+======================================
+save(), saveOrUpdate(), persist(), and update()
+hibernate cache memory first level cache and secod level cache.
+
+Hibernate Cach
+================
+-> Hibernate cach helps us to improve the perfomance of hibernate intraction with database.
+->Every time exicute the Query we will firstly cheak for avalable data in cach,
+ only the data not available in cash,then the control goes to database.
+->This technic helps us out for better optimization and better perfomance.

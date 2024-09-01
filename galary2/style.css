@@ -1,0 +1,39 @@
+body {
+  background-image: url(./Picture/abcd.png);
+  background-size: cover;
+}
+h1 {
+  font-size: 60px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.quote {
+  font-size: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 550;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  margin: 0px 290px;
+  padding: 7px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 270px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.box:hover {
+  transform: scale(0.95);
+}
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}

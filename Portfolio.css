@@ -1,0 +1,170 @@
+body {
+  overflow-x: hidden;
+  background-color: rgb(35, 35, 35) !important;
+  background-size: cover;
+  background-attachment: fixed;
+  cursor: url("./images/arrow.png"), auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.head1 {
+  font-size: 60px;
+  color: white;
+  font-weight: bolder;
+}
+.head2 {
+  font-size: 60px;
+  color: yellow;
+  font-weight: bolder;
+}
+.links {
+  display: flex;
+  justify-content: center;
+}
+.links button {
+  margin: 80px 20px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: lightsalmon;
+  cursor: url("./images/pointer.png"), auto !important;
+  transition: all 0.3s;
+}
+a {
+  cursor: url("./images/pointer.png"), auto !important;
+  text-decoration: none !important;
+}
+.links button:hover {
+  color: white;
+}
+img {
+  width: 90%;
+  height: min-content;
+  margin: 8% 7%;
+  border-radius: 10px;
+}
+.bg-ylw {
+  width: 85.1%;
+  height: 74.3%;
+  margin: 8% 7%;
+  padding-top: 0%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: -1%;
+  left: 2.3%;
+  display: block;
+  transition: all 0.7s;
+}
+/* .bg-ylw:hover
+{
+    background-color: rgba(255, 166, 0, 0.9);
+    font-size: 25px;
+    color: white;
+    padding-top: 16%;
+} */
+.bg-grn1,
+.bg-grn2 {
+  width: 86.6%;
+  height: 74.3%;
+  margin: 8% 7%;
+  padding-top: 0%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: -0.5%;
+  left: 1.6%;
+  display: block;
+  transition: all 0.7s;
+}
+.bg-grn1:hover {
+  background-color: rgba(0, 255, 55, 0.9);
+  font-size: 25px;
+  color: white;
+  padding-top: 16%;
+}
+.bg-grn2:hover {
+  background-color: rgba(0, 255, 55, 0.9);
+  font-size: 25px;
+  color: white;
+  padding-top: 12%;
+}
+.git-link {
+  position: absolute;
+  top: 15%;
+  right: 9%;
+  font-size: 26px;
+  color: transparent;
+  transition: all 0.5s;
+}
+.git-link:hover {
+  scale: 1.2;
+}
+.portfolio-card {
+  animation: blocks 1.5s 1;
+}
+@keyframes blocks {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.git video {
+  cursor: url("./images/pointer.png"), auto !important;
+  position: fixed;
+  margin: 0;
+  right: 10px;
+  top: 10px;
+  width: 130px;
+}
+.git h2 {
+  width: 250px;
+  position: fixed;
+  margin: 0;
+  right: 150px;
+  top: 20px;
+  width: 230px;
+  color: white;
+  text-align: right;
+  opacity: 0;
+  animation: git_h2 8s 1;
+}
+@keyframes git_h2 {
+  0% {
+    transform: translateX(100px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  85% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Choose</title>
+    <style>
+      body {
+        background-color: rgb(40, 40, 40);
+        font-family: cursive;
+        text-align: center;
+      }
+      span {
+        font-size: 40px;
+        color: white;
+        margin-right: 400px;
+        animation-name: animation3;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+      }
+      button {
+        width: 300px;
+        height: 50px;
+        background-color: white;
+        color: rgb(40, 40, 40);
+        margin: 60px 12px 100px;
+        border-radius: 25px;
+        border: none;
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: bolder;
+        animation-name: animation2;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        width: 170px;
+        height: 50px;
+        border: 2px solid;
+        font-size: 30px;
+        font-weight: bolder;
+        margin: 30px;
+        padding: 60px 0px;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 1px 1px 10px white;
+        color: black;
+        text-shadow: 3px 3px 5px rgb(55, 55, 55);
+        animation-name: animation1;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+      }
+      @keyframes animation1 {
+        0% {
+          margin: -86px;
+          box-shadow: 1px 1px 10px rgb(40, 40, 40);
+          margin-top: -300px;
+        }
+        20% {
+          margin: -86px;
+          box-shadow: 1px 1px 10px white;
+        }
+        90% {
+          margin: 35px;
+        }
+        100% {
+          margin: 30px;
+        }
+      }
+      @keyframes animation2 {
+        0% {
+          width: 0px;
+          background-color: rgb(40, 40, 40);
+        }
+        50% {
+          width: 0px;
+          background-color: rgb(40, 40, 40);
+        }
+        100% {
+          width: 300px;
+        }
+      }
+      @keyframes animation3 {
+        0% {
+          color: rgb(40, 40, 40);
+        }
+        80% {
+          color: rgb(40, 40, 40);
+        }
+        100% {
+          margin-left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <span>COLOR GAME</span>
+    <button onclick="Color()">Choose</button>
+    <button onclick="reset()">Reset</button>
+    <div class="color-palet">
+      <div class="row">
+        <div class="box">BLUE</div>
+        <div class="box">GREEN</div>
+        <div class="box">YELLOW</div>
+        <div class="box">ORANGE</div>
+        <div class="box">WHITE</div>
+        <div class="box">VIOLET</div>
+      </div>
+      <div class="row">
+        <div class="box">BROWN</div>
+        <div class="box">RED</div>
+        <div class="box">BLACK</div>
+        <div class="box">PURPLE</div>
+        <div class="box">PINK</div>
+        <div class="box">NAVY</div>
+      </div>
+    </div>
+    <script>
+      function Color() {
+        let input_color = prompt("Enter a color");
+        let q = document.getElementsByClassName("box");
+        switch (input_color) {
+          case "blue":
+            q[0].style.background = "linear-gradient(rgb(92, 92, 253),blue)";
+            break;
+          case "green":
+            q[1].style.background = "linear-gradient(rgb(5, 168, 5),green";
+            break;
+          case "yellow":
+            q[2].style.background = "yellow";
+            break;
+          case "orange":
+            q[3].style.background = "linear-gradient(gold,orange";
+            break;
+          case "white":
+            q[4].style.background = "white";
+            break;
+          case "violet":
+            q[5].style.background = "violet";
+            break;
+          case "brown":
+            q[6].style.background = "brown";
+            break;
+          case "red":
+            q[7].style.background = "red";
+            break;
+          case "black":
+            q[8].style.background = "black";
+            break;
+          case "purple":
+            q[9].style.background = "purple";
+            break;
+          case "pink":
+            q[10].style.background = "pink";
+            break;
+          case "navy":
+            q[11].style.background = "navy";
+            break;
+          default:
+            let msz = confirm("Invalid input");
+            if (msz) {
+              Color();
+            }
+        }
+      }
+      function reset() {
+        let x = document.getElementsByClassName("box");
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.background = "rgb(40, 40, 40)";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: black;
+  overflow-y: hidden;
+}
+.bulb-container {
+  display: flex;
+  justify-content: center;
+}
+.bulb {
+  text-align: center;
+  width: 250px;
+  animation-name: bulbani;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+.light {
+  margin-top: -75px;
+  margin-right: 6px;
+  position: relative;
+}
+.light1 {
+  height: 650px;
+  width: 1200px;
+}
+@keyframes bulbani {
+  0% {
+    margin-top: -250px;
+  }
+  84% {
+    margin-top: 3px;
+    scale: 1.02;
+  }
+  100% {
+  }
+}
+.ctrls {
+  position: absolute;
+  bottom: 250px;
+  left: 400px;
+  width: 430px;
+  display: flex;
+  justify-content: center;
+}
+.on {
+  background-color: rgba(128, 128, 128, 0.208);
+  border-radius: 35px;
+  width: 61px;
+  padding: 15px;
+  color: white;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  animation-name: onani;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes onani {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+  }
+}
+.brightness-controls {
+  background-color: rgba(128, 128, 128, 0.208);
+  border-radius: 35px;
+  padding: 19px 20px 16px;
+  margin: 0px 10px;
+  display: flex;
+  width: fit-content;
+  accent-color: white;
+  width: fit-content;
+  margin: 0px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.slider {
+  width: 290px;
+  width: 0px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
