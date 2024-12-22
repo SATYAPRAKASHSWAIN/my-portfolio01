@@ -84,7 +84,7 @@ function linkRedirect() {
   window.location = "./alllinks.html";
 }
 function aboutRedirect() {
-  window.location = "./about.html";
+  window.location = "./About.html";
 }
 function myPortfolio() {
   window.location = "./portfolio.html";
