@@ -81,16 +81,16 @@ function remove3() {
 }
 
 function linkRedirect() {
-  window.location = "./allLinks.html";
+  window.location = "./alllinks.html";
 }
 function aboutRedirect() {
-  window.location = "./About.html";
+  window.location = "./about.html";
 }
 function myPortfolio() {
-  window.location = "./Portfolio.html";
+  window.location = "./portfolio.html";
 }
 function myevents() {
-  window.location = "./Events.html";
+  window.location = "./events.html";
 }
 function aboutStudyMaterial() {
   window.location = "./study material/index.html";
