@@ -95,3 +95,6 @@ function myevents() {
 function aboutStudyMaterial() {
   window.location = "./study material/index.html";
 }
+function contactMe() {
+  window.location = "./contact me/index.html";
+}
