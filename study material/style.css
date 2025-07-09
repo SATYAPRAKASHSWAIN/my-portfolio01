@@ -60,11 +60,10 @@ marquee {
 
 .hidenn {
   text-transform: uppercase;
-  color: hsl(242, 91%, 46%);
+  color: #edde0c;
   font-size: 1.8rem;
   margin: 1.5rem 0 1rem;
   padding-left: 1rem;
-  gap: 1rem;
   text-align: left;
 }
 
@@ -89,7 +88,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(9, 9, 237);
+  background-color: #0d1768;
   transform: scale(1.05);
 }
 
